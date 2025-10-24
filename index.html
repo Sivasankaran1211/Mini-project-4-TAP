@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course reg form</title>
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+    <form>
+       <fieldset>
+        <legend>Personal details</legend>
+        <table>
+            <tr>
+                <td><label>First Name</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label >Sur Name</label></td>
+                <td><input type="text"></td> 
+            </tr>
+            <tr>
+                <td><label>Moblie Number</label></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td><label>Confirm password</label></td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td><label>DOB</label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender</label>
+                </td>
+                <td>
+                    <input type="radio" name="Gender" value="male">Male
+                <input type="radio" name="Gender" value="female">Female
+                <input type="radio" name="Gender" value="Others">Others
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Select Country</label> </td>
+                    <td>
+                <select name="Select Country">
+                <option value="India">India</option>
+                <option value="China">China</option>
+                <option value="Singapore">Singapore</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Select Picture</label></td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                 <td><button>Reset</button></td>
+            </tr>
+        </table>
+        </fieldset>
+       <fieldset>
+        <legend>Course details</legend>
+        <label>Select Course</label> <br>
+        <select name="select course">
+            <option value="python">Python Full Stack</option>
+            <option value="java">Java Full Stack</option>
+            <option value="c">C Full Stack</option>
+        </select> <br>
+        <label >Delivery mode</label>
+        <input type="checkbox">
+        <label >Online</label>
+        <input type="checkbox">
+        <label>Offline</label> <br>
+        <label >Comments</label> <br>
+       <textarea rows="5" cols="35" ></textarea> <br>
+       <button>Submit</button>
+       </fieldset>
+        
+    </form>
+
+</body>
+</html>
