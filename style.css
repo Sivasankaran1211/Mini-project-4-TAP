@@ -1,0 +1,189 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ECF4E8;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 10px;
+}
+
+/* Center and constrain the whole form */
+.field {
+  max-width: 640px;
+  margin: 30px auto;
+  padding: 10px 15px;
+  background-color: #CBF3BB;
+  border-radius: 20px;
+  box-shadow: 10px 5px 10px #ABE7B2;
+}
+
+/* Heading centered with max width */
+h1 {
+  background-color: #CBF3BB;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto 30px auto;
+  width: 100%;
+  max-width: 640px;
+  text-align: center;
+  box-shadow: 10px 5px 10px #ABE7B2;
+}
+
+/* Reset table and make it full width */
+table.ta {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+/* Table rows and cells stack on smaller screens */
+@media (max-width: 700px) {
+  table.ta tr {
+    display: block;
+    margin-bottom: 15px;
+  }
+  table.ta td {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  table.ta td label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  /* Remove table cell padding on small */
+  table.ta {
+    border-spacing: 0 10px;
+  }
+}
+
+/* Input, select, textarea styles with full width and max-width */
+input.lab, select.lab, textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 5px; 
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1em;
+}
+
+/* Remove fixed input width for flexibility */
+input {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Legend style */
+legend {
+  background-color: #93BFC7;
+  border-radius: 5px;
+  padding: 5px 12px;
+  font-weight: bold;
+}
+
+/* Gender radio + label on same line with spacing */
+.in {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.lb {
+  cursor: pointer;
+  margin-right: 15px;
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: normal;
+}
+
+/* Delivery mode checkboxes aligned */
+.cb {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Course details fieldset */
+.fir {
+  margin-top: 40px;
+  border-radius: 20px;
+  background-color: #CBF3BB;
+  padding: 20px;
+  box-shadow: 10px 5px 10px #ABE7B2;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+/* Select box in course details bigger and full width */
+.fir select {
+  width: 100%;
+  max-width: 320px;
+  height: 40px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Buttons full width on small screens for touch */
+.yu {
+  width: 120px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Align buttons center */
+input[type="submit"], input[type="reset"] {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+}
+
+/* Focus effect on inputs */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #7CCC6B;
+  box-shadow: 0 0 8px #7CCC6B;
+}
+
+/* Responsive adjustments for buttons on very small screens */
+@media (max-width: 450px) {
+  .yu {
+    width: 100%;
+    max-width: 100%;
+  }
+  input[type="submit"], input[type="reset"] {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+}
+.in:focus {
+  outline: none;
+  box-shadow: none !important;
+  border: none !important;
+  transform: none !important;
+}
+/*  */
+
+.field{
+  border-radius: 15px;
+}
+.field{
+  margin-bottom: 100px;
+}
